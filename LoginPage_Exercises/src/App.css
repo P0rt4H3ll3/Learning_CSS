@@ -1,0 +1,37 @@
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px; /* Padding for spacing */
+  text-align: center; /* Center the text */
+  font-size: 12px;
+}
+
+.navBar {
+  transition: opacity 0.3s ease; /* Smooth transition for visibility change */
+}
+
+.navBarHidden {
+  opacity: 0; /* Hide the navbar */
+  pointer-events: none; /* Prevent interaction */
+}
+
+.navBarVisible {
+  opacity: 1; /* Show the navbar */
+  pointer-events: auto; /* Allow interaction */
+}
